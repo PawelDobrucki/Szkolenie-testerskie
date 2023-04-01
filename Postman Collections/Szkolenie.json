@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "CreateBoard",
-			"_postman_id": "250f1c75-403d-45c1-8160-83d9d3903027",
+			"id": "250f1c75-403d-45c1-8160-83d9d3903027",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -47,7 +47,7 @@
 		},
 		{
 			"name": "CreateBoard Copy",
-			"_postman_id": "4b2809e5-8ba4-4963-9caa-39aea4104876",
+			"id": "4b2809e5-8ba4-4963-9caa-39aea4104876",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -87,7 +87,7 @@
 		},
 		{
 			"name": "CreateList",
-			"_postman_id": "96af1fc0-d005-4fca-a55c-3623ae481966",
+			"id": "96af1fc0-d005-4fca-a55c-3623ae481966",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -130,7 +130,7 @@
 		},
 		{
 			"name": "CreateCard",
-			"_postman_id": "bd2849e8-7d38-4b9b-b3ac-8cf6eef942f2",
+			"id": "bd2849e8-7d38-4b9b-b3ac-8cf6eef942f2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -174,7 +174,7 @@
 		},
 		{
 			"name": "CreateListInProgress",
-			"_postman_id": "185b6923-c5a4-4778-90e1-57b03fafb50e",
+			"id": "185b6923-c5a4-4778-90e1-57b03fafb50e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -213,7 +213,7 @@
 		},
 		{
 			"name": "createNewListDone",
-			"_postman_id": "46b5740f-4327-4b42-a23b-ba044e8773f1",
+			"id": "46b5740f-4327-4b42-a23b-ba044e8773f1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -252,7 +252,7 @@
 		},
 		{
 			"name": "uptadeboard",
-			"_postman_id": "040d915d-a409-4c69-a3e2-17cc59a03196",
+			"id": "040d915d-a409-4c69-a3e2-17cc59a03196",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -288,33 +288,55 @@
 		},
 		{
 			"name": "CreateEmoji",
-			"_postman_id": "41372e32-302a-4314-b4f6-69d30a01520d",
+			"id": "41372e32-302a-4314-b4f6-69d30a01520d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
-				"url": null
+				"header": []
 			},
 			"response": []
 		},
 		{
 			"name": "gotMember",
-			"_postman_id": "f96ff013-d1fb-46f1-9912-8c702aef561f",
+			"id": "f96ff013-d1fb-46f1-9912-8c702aef561f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "{{url}}/members/641ff17e6000004b689fc51b?fullName=Pawel&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"members",
+						"641ff17e6000004b689fc51b"
+					],
+					"query": [
+						{
+							"key": "fullName",
+							"value": "Pawel"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "NewBoard",
-			"_postman_id": "51d3ac0f-db94-46fc-8945-6e69ae0203c0",
+			"id": "51d3ac0f-db94-46fc-8945-6e69ae0203c0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -354,7 +376,7 @@
 		},
 		{
 			"name": "CreateNewList",
-			"_postman_id": "b596e8e3-e63b-4ba8-8e43-bb3a0d79ead9",
+			"id": "b596e8e3-e63b-4ba8-8e43-bb3a0d79ead9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -397,7 +419,7 @@
 		},
 		{
 			"name": "CreateNewCard",
-			"_postman_id": "875f461d-26de-405d-bae7-3d1a03606649",
+			"id": "875f461d-26de-405d-bae7-3d1a03606649",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -436,7 +458,7 @@
 		},
 		{
 			"name": "CreateListInProgress2",
-			"_postman_id": "1dff412e-3d42-4b12-95aa-b6066ced3a3a",
+			"id": "1dff412e-3d42-4b12-95aa-b6066ced3a3a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -475,7 +497,7 @@
 		},
 		{
 			"name": "CreateNewListDone2",
-			"_postman_id": "a714e678-22bb-4785-85d7-3a213538d345",
+			"id": "a714e678-22bb-4785-85d7-3a213538d345",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -514,7 +536,7 @@
 		},
 		{
 			"name": "Updateboard2",
-			"_postman_id": "a800ac09-6e9e-40e7-a995-67385b3bad99",
+			"id": "a800ac09-6e9e-40e7-a995-67385b3bad99",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -550,7 +572,7 @@
 		},
 		{
 			"name": "Label",
-			"_postman_id": "aa355bd3-276f-4906-81d7-3389ceca65a9",
+			"id": "aa355bd3-276f-4906-81d7-3389ceca65a9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -597,7 +619,7 @@
 		},
 		{
 			"name": "LabelToCard",
-			"_postman_id": "79d560a7-8404-427b-9d95-3a8e7ac49db3",
+			"id": "79d560a7-8404-427b-9d95-3a8e7ac49db3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -643,7 +665,7 @@
 		},
 		{
 			"name": "nowylabeldokarty",
-			"_postman_id": "4bdf214a-37d2-40ce-ad17-c0888d69581e",
+			"id": "4bdf214a-37d2-40ce-ad17-c0888d69581e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
