@@ -293,8 +293,9 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"url": "{{url}}/1/emoji"
 			},
 			"response": []
 		},
